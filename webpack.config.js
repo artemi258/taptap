@@ -72,6 +72,20 @@ module.exports = {
    scriptLoading: 'blocking',
    alwaysWriteToDisk: true,
   }),
+  new HtmlWebpackPlugin({
+   template: path.resolve(__dirname, 'src/hamsterKombat.html'),
+   inject: 'body',
+   filename: 'hamsterKombat.html',
+   scriptLoading: 'blocking',
+   alwaysWriteToDisk: true,
+  }),
+  new HtmlWebpackPlugin({
+   template: path.resolve(__dirname, 'src/catizen.html'),
+   inject: 'body',
+   filename: 'catizen.html',
+   scriptLoading: 'blocking',
+   alwaysWriteToDisk: true,
+  }),
   new HtmlWebpackHarddiskPlugin({
    outputPath: path.resolve(__dirname, 'dist'),
   }),

@@ -1,0 +1,115 @@
+.header {
+ position: relative;
+ min-height: 500px;
+ z-index: 10;
+ &__title {
+  font-size: 32px;
+  text-align: center;
+ }
+ &__text {
+  margin-top: 50px;
+  width: 500px;
+  line-height: 20px;
+ }
+ &__lines {
+  height: 500px;
+  width: 1140px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: -1;
+ }
+ b {
+  position: relative;
+  &::before {
+   content: '';
+   bottom: -1px;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   position: absolute;
+   background: linear-gradient(
+    89.03deg,
+    rgba(0, 195, 253, 0.02) -18.33%,
+    #00c3fd 23.35%,
+    #0194fe 60.49%,
+    rgba(1, 148, 254, 0) 108.53%
+   );
+   filter: drop-shadow(0px 16px 30px #003861);
+   border-radius: 23.5px;
+  }
+ }
+}
+
+.content {
+ margin-top: 30px;
+ &__title {
+  font-size: 28px;
+  text-align: center;
+  span {
+   font-size: 28px;
+   font-weight: bold;
+   position: relative;
+   &::before {
+    content: '';
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background: linear-gradient(
+     89.03deg,
+     rgba(0, 195, 253, 0.02) -18.33%,
+     #00c3fd 23.35%,
+     #0194fe 60.49%,
+     rgba(1, 148, 254, 0) 108.53%
+    );
+    filter: drop-shadow(0px 16px 30px #003861);
+    border-radius: 23.5px;
+   }
+  }
+ }
+ &__cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+ }
+ &__card {
+  display: flex;
+  align-items: center;
+  width: 530px;
+  height: 250px;
+  border: 1px solid #0194fe;
+  border-radius: 30px;
+  padding: 20px;
+  &-img {
+   object-fit: cover;
+   height: 120px;
+   width: 120px;
+   border-radius: 30px;
+  }
+  &-wrapper {
+   display: flex;
+   flex-direction: column;
+   margin-left: 15px;
+  }
+  &-links {
+   margin-top: 10px;
+  }
+  &-descr {
+   margin-top: 10px;
+  }
+  &-more {
+   font-size: 14px;
+   align-self: flex-end;
+   text-decoration: none;
+   color: #fff;
+   padding: 10px 15px;
+   background-color: #003861;
+   border-radius: 30px;
+   &:hover {
+    box-shadow: 0px 0px 30px #003861;
+   }
+  }
+ }
+}
